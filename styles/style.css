@@ -1,0 +1,185 @@
+    /* Scrollbar Styling */
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e0e0e0;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #0a1f44;
+        border-radius: 5px;
+      }
+  
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+  
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #ffffff;
+        color: #222;
+        line-height: 1.8;
+      }
+  
+      header {
+        position: sticky;
+        top: 0;
+        background: #0a1f44;
+        color: #fff;
+        padding: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        background-image: radial-gradient(circle at top left, rgba(255,255,255,0.03) 0.5px, transparent 1px),
+                          radial-gradient(circle at bottom right, rgba(255,255,255,0.03) 0.5px, transparent 1px);
+        background-size: 40px 40px;
+      }
+  
+      header h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+  
+      nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+      }
+  
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: .3s;
+      }
+      nav a:hover {
+        color: #3b82f6;
+        text-decoration: none;
+        font-weight: 500;
+        transition: .3s;
+      }
+  
+      section {
+        padding: 100px 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+  
+      section#about {
+        background-color: #0a1f44;
+        color: white;
+        border-radius: 20px;
+        margin-top: 120px; /* Increased spacing from header */
+        background-image:
+          radial-gradient(circle 10px at 20% 20%, rgba(255,255,255,0.05) 98%, transparent 100%),
+          radial-gradient(circle 6px at 80% 30%, rgba(255,255,255,0.05) 98%, transparent 100%),
+          repeating-linear-gradient(45deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 2px, transparent 2px, transparent 8px);
+        background-size: 50px 50px;
+      }
+  
+      #about h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+  
+      #about p {
+        text-align: center;
+        padding: 0 20px;
+      }
+  
+      #portfolio {
+        text-align: center;
+      }
+  
+      .portfolio-buttons {
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+  
+      .portfolio-buttons button {
+        background-color: #1e3a8a;
+        color: white;
+        border: none;
+        padding: 14px 30px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+  
+      .portfolio-buttons button:hover {
+        background-color: #3b82f6;
+      }
+  
+      #skills {
+        text-align: center;
+        margin-top: 80px;
+      }
+  
+      .charts-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        margin-top: 40px;
+      }
+  
+      .chart-box {
+        background: white;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 400px;
+      }
+  
+      .chart-box canvas {
+        max-width: 100%;
+        height: 300px;
+      }
+  
+      footer {
+        background-color: #0a1f44;
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+        background-image:
+          radial-gradient(circle 8px at 15% 15%, rgba(255,255,255,0.05) 98%, transparent 100%),
+          radial-gradient(circle 5px at 85% 85%, rgba(255,255,255,0.05) 98%, transparent 100%),
+          repeating-linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 2px, transparent 2px, transparent 8px);
+        background-size: 60px 60px;
+      }
+  
+      .social-icons {
+        margin-top: 20px;
+      }
+  
+      .social-icons a img {
+        width: 30px;
+        margin: 0 10px;
+        filter: brightness(0) invert(1);
+        transition: transform 0.3s;
+      }
+  
+      .social-icons a img:hover {
+        transform: scale(1.2);
+      }
+  
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+        }
+  
+        .charts-container {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
